@@ -133,7 +133,7 @@
     } else if (indexPath.row == 4) {
         cell.textLabel.text = @"4";
     }else if (indexPath.row == 5) {
-        cell.textLabel.text = @"5";}
+        cell.textLabel.text = @"退出";}
     return cell;
 }
 
