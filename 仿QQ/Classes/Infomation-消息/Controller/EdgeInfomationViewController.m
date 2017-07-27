@@ -5,13 +5,11 @@
 //  Created by Edge on 2017/5/17.
 //  Copyright © 2017年 Edge. All rights reserved.
 //
-
+#import "AppDelegate.h"
 #import "EdgeInfomationViewController.h"
 #import "EdgeChatViewController.h"
 #import "EdgeContacts.h"
-#import "EdgeLeftSlideView.h"
-#import "UIView+EdgeExpention.h"
-#import "EdgeLeftSlideManager.h"
+
 
 #import "EdgeLoginViewConViewController.h"
 
@@ -58,39 +56,72 @@
     return _contactsIcon;
 }
 
-
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-      
-    [self.tableView reloadData];
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    // NSLog(@"viewWillDisappear");
+    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    [tempAppDelegate.LeftSlideVC setPanEnabled:NO];
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+     [self.tableView reloadData];
+    
+    [self.navigationItem setHidesBackButton:YES];
+    // NSLog(@"viewWillAppear");
+    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    [tempAppDelegate.LeftSlideVC setPanEnabled:YES];
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+ //   self.title = @"主界面";
+    
     UIBarButtonItem *iteam = [UIBarButtonItem iteamWithImageNamed:@"nav_coin_icon" hightLightImageName:@"nav_coin_icon_click" target:self action:@selector(infomationListView)];
-    self.navigationItem.rightBarButtonItem = iteam;
-    
-    UIBarButtonItem *iteamleft = [UIBarButtonItem iteamWithImageNamed:@"defaulticon.JPG" hightLightImageName:@"defaulticon.JPG" target:self action:@selector(leftSlideView)];
-    
-    self.navigationItem.leftBarButtonItem = iteamleft;
-  
-    //  添加tableView
-    [self addTableView];
-    
-    [self addlistView];
+ 
+    [self.navigationItem setRightBarButtonItem:iteam];
 
+    UIBarButtonItem *iteamLeft = [UIBarButtonItem iteamWithImageNamed:@"menu" hightLightImageName:@"menu" target:self action:@selector(openOrCloseLeftList)];
+    
+    [self.navigationItem setLeftBarButtonItem:iteamLeft];
+    
+    NSLog(@"%@",self.navigationController.childViewControllers);
+//  添加tableView
+    [self addTableView];
+//  添加下拉列表
+    [self addlistView];
+// 添加searchBar
     [self addSearchBar];
+
+}
+
+- (void) openOrCloseLeftList
+{
+    //   NSLog(@"click");
+    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
-    
-    
-   }
+    if (tempAppDelegate.LeftSlideVC.closed)
+    {
+        [tempAppDelegate.LeftSlideVC openLeftView];
+    }
+    else
+    {
+        [tempAppDelegate.LeftSlideVC closeLeftView];
+    }
+}
 
 
 -(void)addSearchBar{
     //  创建searchController
     
-       _searchController = [[UISearchController alloc]initWithSearchResultsController:nil];
+    _searchController = [[UISearchController alloc]initWithSearchResultsController:nil];
  
     _searchController.searchBar.placeholder = @"搜索";
     
@@ -118,7 +149,7 @@
 {
     UITableView *tableView = [[UITableView alloc]init];
     tableView.tag=1;
-    tableView.frame = [UIScreen mainScreen].bounds;
+    tableView.frame =CGRectMake(0, 0, self.view.width, self.view.height);
     self.tableView = tableView;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -160,7 +191,8 @@
     
     UITableView *listView = [[UITableView alloc]init];
     listView.tag=2;
-    listView.frame = CGRectMake(self.view.wdith/2, 70, self.view.wdith/2-5, 245);
+    
+    listView.frame = CGRectMake(self.view.width/2, 70, self.view.width/2-5, 245);
    
     self.listView = listView;
     self.listView.delegate = self;

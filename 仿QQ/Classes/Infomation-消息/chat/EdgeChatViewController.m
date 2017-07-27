@@ -99,7 +99,7 @@
         
         BOOL timeIsEqual;
         
-        if (self.arrTimeData!=nil) {
+        if (self.arrTimeData) {
             //  判断上一个模型时间是否和现在的相等
             timeIsEqual = [self timeIsEqual:model.time];
         }

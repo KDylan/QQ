@@ -240,14 +240,14 @@
     _indexPath = indexPath;
     
         //跳转隐藏tabbar
-        self.hidesBottomBarWhenPushed = YES;
+        [self setHidesBottomBarWhenPushed:YES];
         EdgeChatViewController *chatVC = [[EdgeChatViewController alloc]init];
         
         chatVC.chatName = @"Romantic";
         
         [self.navigationController pushViewController:chatVC animated:YES];
         
-        self.hidesBottomBarWhenPushed=NO;
+        [self setHidesBottomBarWhenPushed:NO];
 }
 
 // 行高

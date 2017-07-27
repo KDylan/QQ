@@ -26,9 +26,11 @@ blue:((CGFloat)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
 
 #define EdgeGloupColor EdgeBackGroundColor(230,230,230);
 #define EdgecellHeaderColor EdgeBackGroundColor(246,246,246);
-#import "UIView+EdgeExpention.h"
+#import "UIView_extra.h"
 #import "UIBarButtonItem+EdgeExention.h"
 #import "SVProgressHUD.h"
+#import "Masonry.h"
+#import "UIImage+EdgeImage.h"
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

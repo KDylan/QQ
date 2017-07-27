@@ -63,7 +63,7 @@
 
     [self.view addSubview:tableView];
     
-    UIView *headView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.wdith, 100)];
+    UIView *headView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, 100)];
     
     tableView.tableHeaderView = headView;
 }
@@ -74,7 +74,7 @@
     
     [self.tableView.tableHeaderView addSubview:topView];
     
-    topView.frame = CGRectMake(0, 0, self.view.wdith, 100);
+    topView.frame = CGRectMake(0, 0, self.view.width, 100);
 }
 
 #pragma mark 按钮点击事件
@@ -84,8 +84,6 @@
 - (void)moreAction{
     
     NSLog(@"%s",__func__);
-    EdgemoreViewController *moreAction = [[EdgemoreViewController alloc]init];
-    [self.navigationController pushViewController:moreAction animated:YES];
     
 }
 
@@ -194,7 +192,7 @@
 //section头部视图
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.wdith, 1)];
+    UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 1)];
     view.backgroundColor = [UIColor clearColor];
     return view ;
 }
@@ -206,7 +204,7 @@
 //section底部视图
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
-    UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.wdith, 1)];
+    UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 1)];
     view.backgroundColor = [UIColor clearColor];
     return view;
 }

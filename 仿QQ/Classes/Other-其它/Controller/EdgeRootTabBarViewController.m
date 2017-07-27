@@ -10,37 +10,34 @@
 #import "EdgeContactViewController.h"
 #import "EdgeDynamicViewController.h"
 #import "EdgeInfomationViewController.h"
-#import "UIImage+EdgeImage.h"
-#import "EdgeLeftSlideManager.h"
+
 #import "EdgeLoginViewConViewController.h"
+
 @interface EdgeRootTabBarViewController ()<UITabBarControllerDelegate>
 
 @end
 
 @implementation EdgeRootTabBarViewController
-
-
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    //  设置最上面一层navigationbar隐藏
     
-//     EdgeLoginViewConViewController *loginIn = [[EdgeLoginViewConViewController alloc]init];
-//    if (loginIn.isLogin) {
-//        
-//      [self addChildController];
-//    }else{
-//        
-//        [self presentViewController:loginIn animated:YES completion:nil];
-//    }
-//
-//
+    [self.navigationItem setHidesBackButton:YES];
+    
+    [self.navigationController setNavigationBarHidden:YES];
 }
-//
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-        self.delegate = self;
+   // NSLog(@"%@",self);
+//    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject;
+//    NSLog(@"--------%@",path);
+    
+    self.delegate = self;
     
     [self addChildController];
+    
     
     //  设置tabbBar属性
     UITabBarItem *item = [UITabBarItem appearance];
@@ -68,12 +65,13 @@
 }
 
 -(void)setChildController:(UIViewController *)ViewController title:(NSString *)title image:(NSString *)image selectImage:(NSString *)selectImage{
-    self.view.backgroundColor = [UIColor
-                                                                 colorWithRed:((float)arc4random_uniform(256)/255.0)
-                                                                 green:((float)arc4random_uniform(256)/255.0)
-                                                                 blue:((float)arc4random_uniform(256)/255.0) alpha:1.0];
-
+//    self.view.backgroundColor = [UIColor
+//                                                                 colorWithRed:((float)arc4random_uniform(256)/255.0)
+//                                                                 green:((float)arc4random_uniform(256)/255.0)
+//                                                                 blue:((float)arc4random_uniform(256)/255.0) alpha:1.0];
+//
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:ViewController];
+ //   [nav.navigationBar setBackgroundColor:[UIColor redColor]];
     ViewController.title = title;
     ViewController.tabBarItem.title = title;
     ViewController.tabBarItem.image = [UIImage imageNamed:image];
@@ -83,22 +81,22 @@
     
 }
 #pragma mark - UITabBarController protocol methods
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
-    if ([viewController isKindOfClass:[UINavigationController class]]) {
-        
-        UINavigationController *navigationController = (UINavigationController *)viewController;
-        UIViewController *_viewController = navigationController.viewControllers.firstObject;
-        NSLog(@"%@",_viewController);
-        // 如果选中消息页，响应拖拽手势，可以显示侧边栏
-        // 否则取消手势响应，不能显示侧边栏
-        if ([_viewController isKindOfClass:[EdgeInfomationViewController class]]) {
-            
-            [[EdgeLeftSlideManager instance] beginGragRespanse];
-        } else {
-            [[EdgeLeftSlideManager instance] cancelDrawReponse];
-        }
-    }
-}
+//- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+//    if ([viewController isKindOfClass:[UINavigationController class]]) {
+//        
+//        UINavigationController *navigationController = (UINavigationController *)viewController;
+//        UIViewController *_viewController = navigationController.viewControllers.firstObject;
+//        NSLog(@"%@",_viewController);
+//        // 如果选中消息页，响应拖拽手势，可以显示侧边栏
+//        // 否则取消手势响应，不能显示侧边栏
+//        if ([_viewController isKindOfClass:[EdgeInfomationViewController class]]) {
+//            
+//            [[EdgeLeftSlideManager instance] beginGragRespanse];
+//        } else {
+//            [[EdgeLeftSlideManager instance] cancelDrawReponse];
+//        }
+//    }
+//}
 
 
 @end

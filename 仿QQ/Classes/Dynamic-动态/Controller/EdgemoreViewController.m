@@ -8,15 +8,24 @@
 
 #import "EdgemoreViewController.h"
 #import "EdgeLoginViewConViewController.h"
+
+#import "EdgeRootViewController.h"
 @interface EdgemoreViewController ()
 
 @end
 
 @implementation EdgemoreViewController
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+      [self.navigationController setNavigationBarHidden:NO];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
    self.navigationItem.title = @"更多";
+    
+    NSLog(@"more-%@",self.navigationController.childViewControllers);
 }
 //  注销登录
 - (IBAction)singOut:(id)sender {
@@ -29,8 +38,18 @@
         
         NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
         [user removeObjectForKey:@"isLogin"];
+    
+        //  执行退出操作登录
         
-        [(UINavigationController *)[UIApplication sharedApplication].delegate.window.rootViewController popToRootViewControllerAnimated:NO];
+    //    EdgeLoginViewConViewController *revise =[[EdgeLoginViewConViewController alloc]init];
+       
+     //   self.hidesBottomBarWhenPushed=YES;
+        
+        [self.navigationController popToRootViewControllerAnimated:NO];
+      //  [self.navigationController pushViewController:revise animated:YES];
+        //跳转隐藏tabbar
+      //  self.hidesBottomBarWhenPushed = NO;
+
     }];
     
     [alert addAction:cancel];

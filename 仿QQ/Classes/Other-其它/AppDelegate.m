@@ -11,9 +11,7 @@
 #import "EdgeLoginViewConViewController.h"
 #import <SMS_SDK/SMSSDK.h>
 
-#import "EdgeLeftSlideView.h"
-#import "UIView+EdgeExpention.h"
-#import "EdgeLeftSlideManager.h"
+#import "EdgeRootViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -25,21 +23,8 @@ static NSString *appSecret = @"e25fa54a6c24d0d7adbc3615386defbf";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
-    
-//    EdgeLoginViewConViewController *loginIn = [[EdgeLoginViewConViewController alloc]init];
-//    
-//    if (loginIn.isLogin) {
-//    
         [self addRootViewController];
-        
-//    }else{
-//        
-//        self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-//        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:loginIn];
-//        self.window.rootViewController = nav;
-//        [self.window makeKeyAndVisible];
-//        
-//    }
+    
     //初始化应用，appKey和appSecret从后台申请得
     [SMSSDK registerApp:appKey
              withSecret:appSecret];
@@ -48,20 +33,27 @@ static NSString *appSecret = @"e25fa54a6c24d0d7adbc3615386defbf";
 }
 
 
+
 -(void)addRootViewController{
     
      self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+
+    EdgeRootViewController *mainVC = [[EdgeRootViewController alloc]init];
+    
+//    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:RootVC];
 //    
-//    EdgeLeftSlideView *leftView = [[EdgeLeftSlideView alloc] initWithFrame:CGRectMake(-self.window.wdith * (1 - leftWidthScale), 0, self.window.wdith, self.window.height)];
-//    
-//   
-//    EdgeRootTabBarViewController *tabbarVC = [[EdgeRootTabBarViewController alloc]init];
+//    self.window.rootViewController = nav;
     
-    EdgeLoginViewConViewController *rootViewController = [[EdgeLoginViewConViewController alloc]init];    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:rootViewController];    self.window.rootViewController = nav;
+   self.mainNavigationController = [[UINavigationController alloc] initWithRootViewController:mainVC];
+  
+    LeftSortsViewController *leftVC = [[LeftSortsViewController alloc] init];
     
-//    [[EdgeLeftSlideManager instance]installMainViewController:tabbarVC leftView:leftView];
-    
+    self.LeftSlideVC = [[LeftSlideViewController alloc] initWithLeftView:leftVC andMainView:self.mainNavigationController];
+ 
+    self.window.rootViewController = self.LeftSlideVC;
+ 
     self.window.backgroundColor = [UIColor whiteColor];
+    
     [self.window makeKeyAndVisible];
     
 }

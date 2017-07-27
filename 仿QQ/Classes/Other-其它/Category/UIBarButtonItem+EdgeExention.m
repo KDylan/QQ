@@ -24,8 +24,8 @@
 //    [btn setTitle:title forState:(UIControlStateNormal)];
 //    
 //    btn.titleLabel.font = [UIFont systemFontOfSize: 14.0];
-    btn.layer.masksToBounds = YES;
-    btn.layer.cornerRadius = btn.currentImage.size.width/2;
+    //btn.layer.masksToBounds = YES;
+    //btn.layer.cornerRadius = btn.currentImage.size.width/2;
     return [[UIBarButtonItem alloc]initWithCustomView:btn];
 
 }

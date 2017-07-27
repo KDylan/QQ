@@ -10,7 +10,7 @@
 #import "EdgeRootTabBarViewController.h"
 #import "EdgeForgetPasswardViewController.h"
 #import "EdgeRegisteredViewController.h"
-
+#import "EdgeInfomationViewController.h"
 @interface EdgeLoginViewConViewController ()<UITextFieldDelegate>
 
 
@@ -18,74 +18,58 @@
 @end
 
 @implementation EdgeLoginViewConViewController
-/**
- *当注销登录时，出现这个页面，让他的导航栏重新显示
- */
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:YES];
-    self.navigationController.navigationBar.hidden = NO;
+
+-(void)viewWillAppear:(BOOL)animated{
+   
+    [super viewWillAppear:animated];
+    
+    [self.navigationItem setHidesBackButton:YES];
+    
+   // self.navigationController.view.backgroundColor = [UIColor redColor];
+    
+   // [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.userName.delegate = self;
     self.userPassward.delegate = self;
+    NSLog(@"%@", self.navigationController.childViewControllers);
+
+  //  self.title = @"login";
     
     _iconImageView.layer.masksToBounds = YES;
     _iconImageView.layer.cornerRadius = _iconImageView.frame.size.width/2;
-    
-    /*获取Document目录*/
-  //  self.navigationItem.title = @"登录";
-    
-    NSArray*documentArr =NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
-    NSLog(@"%@",documentArr);
-  //  self.navigationController.navigationBar.translucent = NO;
-    NSUserDefaults *user= [NSUserDefaults standardUserDefaults];
-    self.isLogin = [user objectForKey:@"isLogin"];
-  
-    //  已经登录
-    if (self.isLogin) {
-        
-        [self isLogined];
-    }
-    
-}
-/**
- *  已经登录了
- */
--(void)isLogined{
-    
-    EdgeRootTabBarViewController *rootView = [[EdgeRootTabBarViewController alloc]init];
-    
-    [self.navigationController pushViewController:rootView animated:NO];
-    self.navigationController.navigationBar.hidden = YES;
-    //self.navigationController.navigationBar.translucent = YES;
-    self.navigationController.navigationItem.leftBarButtonItem = nil;
 }
 //  登录
 - (IBAction)LoginInAction:(UIButton *)sender {
    // NSLog(@"登录");
     NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
-    NSDictionary *dic = [user objectForKey:@"login"];
   
-    if (_userName.text == dic[@"user"]||_userPassward.text==dic[@"password"])
-    {
-       
+    NSDictionary *dic = [user objectForKey:@"login"];
+ 
+    NSLog(@"%@-%@",dic[@"user"],dic[@"password"]);
+   
+    NSLog(@"%@-%@",_userName.text,_userPassward.text);
+    
+    if ([_userName.text isEqualToString: dic[@"user"]]&&[_userPassward.text isEqualToString: dic[@"password"]]){
+    
+      //  if (_userName.text==dic[@"user"]&&_userPassward.text==dic[@"password"])
         [sender setTitle:@"登录中..." forState:UIControlStateNormal];
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
             EdgeRootTabBarViewController *endView = [[EdgeRootTabBarViewController alloc]init];
-             [user setBool:YES forKey:@"isLogin"];
+        
+            [user setBool:YES forKey:@"isLogin"];
+        
             [self.navigationController pushViewController:endView animated:NO];
-            endView.navigationController.navigationBar.hidden = YES;
-            endView.navigationController.navigationItem.leftBarButtonItem = nil;
+           // [endView.navigationController setNavigationBarHidden:YES];
+            //self.navigationController.navigationBar.translucent = YES;
+          //  [endView.navigationController.navigationItem setLeftBarButtonItem:nil];
               [sender setTitle:@"登录" forState:UIControlStateNormal];
         });
-      
-       
-    }
-    else{
+    }else{
         //验证成功后的回调；
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"登录失败" message:@"账号或密码错误" preferredStyle:UIAlertControllerStyleAlert];
         //                        UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
