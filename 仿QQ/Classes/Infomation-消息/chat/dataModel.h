@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface dataModel : NSObject
+@interface dataModel : NSObject<NSCoding>
 
 @property (nonatomic,copy)NSString *imageName;
 @property (nonatomic,copy)NSString *desc;
 @property (nonatomic,copy)NSString *time;
 @property (nonatomic,assign)BOOL person;
+//-(NSDictionary*) transDictionary;
 
 +(instancetype)DictionWithMessInfo:(NSDictionary *)dict;
 

@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E433E011EDC3EA100DD0327 /* dataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E433DF81EDC3EA100DD0327 /* dataModel.m */; };
 		7E433E021EDC3EA100DD0327 /* dataPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E433DF91EDC3EA100DD0327 /* dataPlist.plist */; };
 		7E433E031EDC3EA100DD0327 /* EdgeChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E433DFB1EDC3EA100DD0327 /* EdgeChatViewController.m */; };
 		7E433E041EDC3EA100DD0327 /* EdgeChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E433DFC1EDC3EA100DD0327 /* EdgeChatViewController.xib */; };
-		7E433E051EDC3EA100DD0327 /* EdgeCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E433DFE1EDC3EA100DD0327 /* EdgeCustomTableViewCell.m */; };
-		7E433E061EDC3EA100DD0327 /* modelFream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E433E001EDC3EA100DD0327 /* modelFream.m */; };
 		7E44DF0D1ED6B9BE005B6B26 /* EdgeForgetPassTWOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E44DEFF1ED6B9BE005B6B26 /* EdgeForgetPassTWOViewController.m */; };
 		7E44DF0E1ED6B9BE005B6B26 /* EdgeForgetPassTWOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E44DF001ED6B9BE005B6B26 /* EdgeForgetPassTWOViewController.xib */; };
 		7E44DF0F1ED6B9BE005B6B26 /* EdgeForgetPasswardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E44DF021ED6B9BE005B6B26 /* EdgeForgetPasswardViewController.m */; };
@@ -62,7 +59,41 @@
 		7E72C4551ECC4A4800C54296 /* _QQTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E72C4541ECC4A4800C54296 /* _QQTests.m */; };
 		7E72C4601ECC4A4800C54296 /* _QQUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E72C45F1ECC4A4800C54296 /* _QQUITests.m */; };
 		7EB78EAD1ED09F9B0011642C /* EdgeEditContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB78EAC1ED09F9B0011642C /* EdgeEditContactController.m */; };
+		C606CE021F2EB0FA00917F04 /* dataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CDFF1F2EB0FA00917F04 /* dataModel.m */; };
+		C606CE031F2EB0FA00917F04 /* modelFream.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE011F2EB0FA00917F04 /* modelFream.m */; };
+		C606CE0C1F2EB20900917F04 /* EdgeCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE0B1F2EB20900917F04 /* EdgeCustomTableViewCell.m */; };
+		C606CE401F2EB9AF00917F04 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C606CE0F1F2EB9AF00917F04 /* Info.plist */; };
+		C606CE411F2EB9AF00917F04 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE121F2EB9AF00917F04 /* MJExtensionConst.m */; };
+		C606CE421F2EB9AF00917F04 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE141F2EB9AF00917F04 /* MJFoundation.m */; };
+		C606CE431F2EB9AF00917F04 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE161F2EB9AF00917F04 /* MJProperty.m */; };
+		C606CE441F2EB9AF00917F04 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE181F2EB9AF00917F04 /* MJPropertyKey.m */; };
+		C606CE451F2EB9AF00917F04 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE1A1F2EB9AF00917F04 /* MJPropertyType.m */; };
+		C606CE461F2EB9AF00917F04 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE1C1F2EB9AF00917F04 /* NSObject+MJClass.m */; };
+		C606CE471F2EB9AF00917F04 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE1E1F2EB9AF00917F04 /* NSObject+MJCoding.m */; };
+		C606CE481F2EB9AF00917F04 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE201F2EB9AF00917F04 /* NSObject+MJKeyValue.m */; };
+		C606CE491F2EB9AF00917F04 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE221F2EB9AF00917F04 /* NSObject+MJProperty.m */; };
+		C606CE4A1F2EB9AF00917F04 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE241F2EB9AF00917F04 /* NSString+MJExtension.m */; };
+		C606CE4B1F2EB9AF00917F04 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE271F2EB9AF00917F04 /* NSObject+SBJson.m */; };
+		C606CE4C1F2EB9AF00917F04 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE2A1F2EB9AF00917F04 /* SBJsonParser.m */; };
+		C606CE4D1F2EB9AF00917F04 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE2C1F2EB9AF00917F04 /* SBJsonStreamParser.m */; };
+		C606CE4E1F2EB9AF00917F04 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE2E1F2EB9AF00917F04 /* SBJsonStreamParserAccumulator.m */; };
+		C606CE4F1F2EB9AF00917F04 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE301F2EB9AF00917F04 /* SBJsonStreamParserAdapter.m */; };
+		C606CE501F2EB9AF00917F04 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE321F2EB9AF00917F04 /* SBJsonStreamParserState.m */; };
+		C606CE511F2EB9AF00917F04 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE341F2EB9AF00917F04 /* SBJsonStreamWriter.m */; };
+		C606CE521F2EB9AF00917F04 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE361F2EB9AF00917F04 /* SBJsonStreamWriterAccumulator.m */; };
+		C606CE531F2EB9AF00917F04 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE381F2EB9AF00917F04 /* SBJsonStreamWriterState.m */; };
+		C606CE541F2EB9AF00917F04 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE3A1F2EB9AF00917F04 /* SBJsonTokeniser.m */; };
+		C606CE551F2EB9AF00917F04 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE3C1F2EB9AF00917F04 /* SBJsonUTF8Stream.m */; };
+		C606CE561F2EB9AF00917F04 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE3E1F2EB9AF00917F04 /* SBJsonWriter.m */; };
+		C606CE5A1F2EB9FF00917F04 /* BaseFMDBOption.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE591F2EB9FF00917F04 /* BaseFMDBOption.m */; };
+		C606CE5D1F2EBAE500917F04 /* EdgeInfoOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = C606CE5C1F2EBAE500917F04 /* EdgeInfoOptions.m */; };
 		C60C97281F283A6D007DEBAC /* EdgeRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C60C97271F283A6D007DEBAC /* EdgeRootViewController.m */; };
+		C631D3EA1F2E1A4700B0E840 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C631D3E01F2E1A4700B0E840 /* FMDatabase.m */; };
+		C631D3EB1F2E1A4700B0E840 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C631D3E21F2E1A4700B0E840 /* FMDatabaseAdditions.m */; };
+		C631D3EC1F2E1A4700B0E840 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C631D3E41F2E1A4700B0E840 /* FMDatabasePool.m */; };
+		C631D3ED1F2E1A4700B0E840 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C631D3E61F2E1A4700B0E840 /* FMDatabaseQueue.m */; };
+		C631D3EE1F2E1A4700B0E840 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C631D3E91F2E1A4700B0E840 /* FMResultSet.m */; };
+		C631D3F11F2E1A6900B0E840 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C631D3F01F2E1A6900B0E840 /* libsqlite3.0.tbd */; };
 		C634E5881F28A24A00CCE2F2 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C634E5851F28A24A00CCE2F2 /* LeftSlideViewController.m */; };
 		C634E5891F28A24A00CCE2F2 /* LeftSortsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C634E5871F28A24A00CCE2F2 /* LeftSortsViewController.m */; };
 		C634E5A41F28A28000CCE2F2 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C634E58C1F28A28000CCE2F2 /* MASCompositeConstraint.m */; };
@@ -96,16 +127,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7E433DF71EDC3EA100DD0327 /* dataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dataModel.h; path = ../chat/dataModel.h; sourceTree = "<group>"; };
-		7E433DF81EDC3EA100DD0327 /* dataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = dataModel.m; path = ../chat/dataModel.m; sourceTree = "<group>"; };
 		7E433DF91EDC3EA100DD0327 /* dataPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = dataPlist.plist; path = "../Infomation-消息/chat/dataPlist.plist"; sourceTree = "<group>"; };
 		7E433DFA1EDC3EA100DD0327 /* EdgeChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeChatViewController.h; sourceTree = "<group>"; };
 		7E433DFB1EDC3EA100DD0327 /* EdgeChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdgeChatViewController.m; sourceTree = "<group>"; };
 		7E433DFC1EDC3EA100DD0327 /* EdgeChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EdgeChatViewController.xib; sourceTree = "<group>"; };
-		7E433DFD1EDC3EA100DD0327 /* EdgeCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EdgeCustomTableViewCell.h; path = ../chat/EdgeCustomTableViewCell.h; sourceTree = "<group>"; };
-		7E433DFE1EDC3EA100DD0327 /* EdgeCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EdgeCustomTableViewCell.m; path = ../chat/EdgeCustomTableViewCell.m; sourceTree = "<group>"; };
-		7E433DFF1EDC3EA100DD0327 /* modelFream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = modelFream.h; path = ../chat/modelFream.h; sourceTree = "<group>"; };
-		7E433E001EDC3EA100DD0327 /* modelFream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = modelFream.m; path = ../chat/modelFream.m; sourceTree = "<group>"; };
 		7E44DEFE1ED6B9BE005B6B26 /* EdgeForgetPassTWOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeForgetPassTWOViewController.h; sourceTree = "<group>"; };
 		7E44DEFF1ED6B9BE005B6B26 /* EdgeForgetPassTWOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdgeForgetPassTWOViewController.m; sourceTree = "<group>"; };
 		7E44DF001ED6B9BE005B6B26 /* EdgeForgetPassTWOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EdgeForgetPassTWOViewController.xib; sourceTree = "<group>"; };
@@ -185,8 +210,78 @@
 		7E72C4611ECC4A4800C54296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EB78EAB1ED09F9B0011642C /* EdgeEditContactController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeEditContactController.h; sourceTree = "<group>"; };
 		7EB78EAC1ED09F9B0011642C /* EdgeEditContactController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdgeEditContactController.m; sourceTree = "<group>"; };
+		C606CDFE1F2EB0FA00917F04 /* dataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dataModel.h; path = "仿QQ/Classes/Infomation-消息/chat/dataModel.h"; sourceTree = SOURCE_ROOT; };
+		C606CDFF1F2EB0FA00917F04 /* dataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = dataModel.m; path = "仿QQ/Classes/Infomation-消息/chat/dataModel.m"; sourceTree = SOURCE_ROOT; };
+		C606CE001F2EB0FA00917F04 /* modelFream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = modelFream.h; path = "仿QQ/Classes/Infomation-消息/chat/modelFream.h"; sourceTree = SOURCE_ROOT; };
+		C606CE011F2EB0FA00917F04 /* modelFream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = modelFream.m; path = "仿QQ/Classes/Infomation-消息/chat/modelFream.m"; sourceTree = SOURCE_ROOT; };
+		C606CE0A1F2EB20900917F04 /* EdgeCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EdgeCustomTableViewCell.h; path = "仿QQ/Classes/Infomation-消息/chat/EdgeCustomTableViewCell.h"; sourceTree = SOURCE_ROOT; };
+		C606CE0B1F2EB20900917F04 /* EdgeCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EdgeCustomTableViewCell.m; path = "仿QQ/Classes/Infomation-消息/chat/EdgeCustomTableViewCell.m"; sourceTree = SOURCE_ROOT; };
+		C606CE0F1F2EB9AF00917F04 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C606CE101F2EB9AF00917F04 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		C606CE111F2EB9AF00917F04 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		C606CE121F2EB9AF00917F04 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		C606CE131F2EB9AF00917F04 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		C606CE141F2EB9AF00917F04 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		C606CE151F2EB9AF00917F04 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		C606CE161F2EB9AF00917F04 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		C606CE171F2EB9AF00917F04 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		C606CE181F2EB9AF00917F04 /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		C606CE191F2EB9AF00917F04 /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		C606CE1A1F2EB9AF00917F04 /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		C606CE1B1F2EB9AF00917F04 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		C606CE1C1F2EB9AF00917F04 /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		C606CE1D1F2EB9AF00917F04 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		C606CE1E1F2EB9AF00917F04 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		C606CE1F1F2EB9AF00917F04 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		C606CE201F2EB9AF00917F04 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		C606CE211F2EB9AF00917F04 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		C606CE221F2EB9AF00917F04 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		C606CE231F2EB9AF00917F04 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		C606CE241F2EB9AF00917F04 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		C606CE261F2EB9AF00917F04 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		C606CE271F2EB9AF00917F04 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		C606CE281F2EB9AF00917F04 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		C606CE291F2EB9AF00917F04 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		C606CE2A1F2EB9AF00917F04 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		C606CE2B1F2EB9AF00917F04 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		C606CE2C1F2EB9AF00917F04 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		C606CE2D1F2EB9AF00917F04 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		C606CE2E1F2EB9AF00917F04 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		C606CE2F1F2EB9AF00917F04 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		C606CE301F2EB9AF00917F04 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		C606CE311F2EB9AF00917F04 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		C606CE321F2EB9AF00917F04 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		C606CE331F2EB9AF00917F04 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		C606CE341F2EB9AF00917F04 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		C606CE351F2EB9AF00917F04 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		C606CE361F2EB9AF00917F04 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		C606CE371F2EB9AF00917F04 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		C606CE381F2EB9AF00917F04 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		C606CE391F2EB9AF00917F04 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		C606CE3A1F2EB9AF00917F04 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		C606CE3B1F2EB9AF00917F04 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		C606CE3C1F2EB9AF00917F04 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		C606CE3D1F2EB9AF00917F04 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		C606CE3E1F2EB9AF00917F04 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		C606CE3F1F2EB9AF00917F04 /* UIView+expanded2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+expanded2.h"; sourceTree = "<group>"; };
+		C606CE581F2EB9FF00917F04 /* BaseFMDBOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFMDBOption.h; sourceTree = "<group>"; };
+		C606CE591F2EB9FF00917F04 /* BaseFMDBOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFMDBOption.m; sourceTree = "<group>"; };
+		C606CE5B1F2EBAE500917F04 /* EdgeInfoOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeInfoOptions.h; sourceTree = "<group>"; };
+		C606CE5C1F2EBAE500917F04 /* EdgeInfoOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdgeInfoOptions.m; sourceTree = "<group>"; };
 		C60C97261F283A6D007DEBAC /* EdgeRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeRootViewController.h; sourceTree = "<group>"; };
 		C60C97271F283A6D007DEBAC /* EdgeRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdgeRootViewController.m; sourceTree = "<group>"; };
+		C631D3DF1F2E1A4700B0E840 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		C631D3E01F2E1A4700B0E840 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		C631D3E11F2E1A4700B0E840 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		C631D3E21F2E1A4700B0E840 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		C631D3E31F2E1A4700B0E840 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		C631D3E41F2E1A4700B0E840 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		C631D3E51F2E1A4700B0E840 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		C631D3E61F2E1A4700B0E840 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		C631D3E71F2E1A4700B0E840 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		C631D3E81F2E1A4700B0E840 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		C631D3E91F2E1A4700B0E840 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		C631D3F01F2E1A6900B0E840 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		C634E5841F28A24A00CCE2F2 /* LeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideViewController.h; sourceTree = "<group>"; };
 		C634E5851F28A24A00CCE2F2 /* LeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideViewController.m; sourceTree = "<group>"; };
 		C634E5861F28A24A00CCE2F2 /* LeftSortsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSortsViewController.h; sourceTree = "<group>"; };
@@ -225,6 +320,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C631D3F11F2E1A6900B0E840 /* libsqlite3.0.tbd in Frameworks */,
 				7E47CBE51ED6B04700C9A552 /* libz.tbd in Frameworks */,
 				7E47CBF71ED6B3BC00C9A552 /* MOBFoundation.framework in Frameworks */,
 				7E47CBF91ED6B3BD00C9A552 /* SMS_SDK.framework in Frameworks */,
@@ -294,6 +390,7 @@
 		7E47CBE61ED6B06500C9A552 /* FameWorks */ = {
 			isa = PBXGroup;
 			children = (
+				C631D3DE1F2E1A4700B0E840 /* fmdb */,
 				7E47CBE71ED6B3BC00C9A552 /* SMS_SDK */,
 				7E47CBEB1ED6B3BC00C9A552 /* SMSSDKUI.bundle */,
 				7E47CBEC1ED6B3BC00C9A552 /* SVProgressHUD */,
@@ -441,6 +538,7 @@
 		7E4B28F81ED071DF003DE423 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C606CE571F2EB9E700917F04 /* FMDB */,
 				7E433DF61EDC3EA100DD0327 /* chat */,
 				7E4B28F91ED071DF003DE423 /* EdgeInfomationViewController.h */,
 				7E4B28FA1ED071DF003DE423 /* EdgeInfomationViewController.m */,
@@ -451,10 +549,10 @@
 		7E4B28FB1ED071DF003DE423 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7E433DFF1EDC3EA100DD0327 /* modelFream.h */,
-				7E433E001EDC3EA100DD0327 /* modelFream.m */,
-				7E433DF71EDC3EA100DD0327 /* dataModel.h */,
-				7E433DF81EDC3EA100DD0327 /* dataModel.m */,
+				C606CDFE1F2EB0FA00917F04 /* dataModel.h */,
+				C606CDFF1F2EB0FA00917F04 /* dataModel.m */,
+				C606CE001F2EB0FA00917F04 /* modelFream.h */,
+				C606CE011F2EB0FA00917F04 /* modelFream.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -462,8 +560,8 @@
 		7E4B28FC1ED071DF003DE423 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7E433DFD1EDC3EA100DD0327 /* EdgeCustomTableViewCell.h */,
-				7E433DFE1EDC3EA100DD0327 /* EdgeCustomTableViewCell.m */,
+				C606CE0A1F2EB20900917F04 /* EdgeCustomTableViewCell.h */,
+				C606CE0B1F2EB20900917F04 /* EdgeCustomTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -486,6 +584,7 @@
 		7E4B29001ED071DF003DE423 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				C606CE0D1F2EB9AF00917F04 /* EXtern */,
 				C634E58A1F28A28000CCE2F2 /* Masonry */,
 				7E4B29011ED071DF003DE423 /* UIBarButtonItem+EdgeExention.h */,
 				7E4B29021ED071DF003DE423 /* UIBarButtonItem+EdgeExention.m */,
@@ -523,6 +622,7 @@
 				7E72C45E1ECC4A4800C54296 /* 仿QQUITests */,
 				7E72C4381ECC4A4800C54296 /* Products */,
 				7E47CBE61ED6B06500C9A552 /* FameWorks */,
+				C631D3EF1F2E1A6900B0E840 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -571,6 +671,114 @@
 				7E72C4611ECC4A4800C54296 /* Info.plist */,
 			);
 			path = "仿QQUITests";
+			sourceTree = "<group>";
+		};
+		C606CE0D1F2EB9AF00917F04 /* EXtern */ = {
+			isa = PBXGroup;
+			children = (
+				C606CE0E1F2EB9AF00917F04 /* MJExtension */,
+				C606CE251F2EB9AF00917F04 /* SBJsonClasses */,
+			);
+			path = EXtern;
+			sourceTree = "<group>";
+		};
+		C606CE0E1F2EB9AF00917F04 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C606CE0F1F2EB9AF00917F04 /* Info.plist */,
+				C606CE101F2EB9AF00917F04 /* MJExtension.h */,
+				C606CE111F2EB9AF00917F04 /* MJExtensionConst.h */,
+				C606CE121F2EB9AF00917F04 /* MJExtensionConst.m */,
+				C606CE131F2EB9AF00917F04 /* MJFoundation.h */,
+				C606CE141F2EB9AF00917F04 /* MJFoundation.m */,
+				C606CE151F2EB9AF00917F04 /* MJProperty.h */,
+				C606CE161F2EB9AF00917F04 /* MJProperty.m */,
+				C606CE171F2EB9AF00917F04 /* MJPropertyKey.h */,
+				C606CE181F2EB9AF00917F04 /* MJPropertyKey.m */,
+				C606CE191F2EB9AF00917F04 /* MJPropertyType.h */,
+				C606CE1A1F2EB9AF00917F04 /* MJPropertyType.m */,
+				C606CE1B1F2EB9AF00917F04 /* NSObject+MJClass.h */,
+				C606CE1C1F2EB9AF00917F04 /* NSObject+MJClass.m */,
+				C606CE1D1F2EB9AF00917F04 /* NSObject+MJCoding.h */,
+				C606CE1E1F2EB9AF00917F04 /* NSObject+MJCoding.m */,
+				C606CE1F1F2EB9AF00917F04 /* NSObject+MJKeyValue.h */,
+				C606CE201F2EB9AF00917F04 /* NSObject+MJKeyValue.m */,
+				C606CE211F2EB9AF00917F04 /* NSObject+MJProperty.h */,
+				C606CE221F2EB9AF00917F04 /* NSObject+MJProperty.m */,
+				C606CE231F2EB9AF00917F04 /* NSString+MJExtension.h */,
+				C606CE241F2EB9AF00917F04 /* NSString+MJExtension.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		C606CE251F2EB9AF00917F04 /* SBJsonClasses */ = {
+			isa = PBXGroup;
+			children = (
+				C606CE261F2EB9AF00917F04 /* NSObject+SBJson.h */,
+				C606CE271F2EB9AF00917F04 /* NSObject+SBJson.m */,
+				C606CE281F2EB9AF00917F04 /* SBJson.h */,
+				C606CE291F2EB9AF00917F04 /* SBJsonParser.h */,
+				C606CE2A1F2EB9AF00917F04 /* SBJsonParser.m */,
+				C606CE2B1F2EB9AF00917F04 /* SBJsonStreamParser.h */,
+				C606CE2C1F2EB9AF00917F04 /* SBJsonStreamParser.m */,
+				C606CE2D1F2EB9AF00917F04 /* SBJsonStreamParserAccumulator.h */,
+				C606CE2E1F2EB9AF00917F04 /* SBJsonStreamParserAccumulator.m */,
+				C606CE2F1F2EB9AF00917F04 /* SBJsonStreamParserAdapter.h */,
+				C606CE301F2EB9AF00917F04 /* SBJsonStreamParserAdapter.m */,
+				C606CE311F2EB9AF00917F04 /* SBJsonStreamParserState.h */,
+				C606CE321F2EB9AF00917F04 /* SBJsonStreamParserState.m */,
+				C606CE331F2EB9AF00917F04 /* SBJsonStreamWriter.h */,
+				C606CE341F2EB9AF00917F04 /* SBJsonStreamWriter.m */,
+				C606CE351F2EB9AF00917F04 /* SBJsonStreamWriterAccumulator.h */,
+				C606CE361F2EB9AF00917F04 /* SBJsonStreamWriterAccumulator.m */,
+				C606CE371F2EB9AF00917F04 /* SBJsonStreamWriterState.h */,
+				C606CE381F2EB9AF00917F04 /* SBJsonStreamWriterState.m */,
+				C606CE391F2EB9AF00917F04 /* SBJsonTokeniser.h */,
+				C606CE3A1F2EB9AF00917F04 /* SBJsonTokeniser.m */,
+				C606CE3B1F2EB9AF00917F04 /* SBJsonUTF8Stream.h */,
+				C606CE3C1F2EB9AF00917F04 /* SBJsonUTF8Stream.m */,
+				C606CE3D1F2EB9AF00917F04 /* SBJsonWriter.h */,
+				C606CE3E1F2EB9AF00917F04 /* SBJsonWriter.m */,
+				C606CE3F1F2EB9AF00917F04 /* UIView+expanded2.h */,
+			);
+			path = SBJsonClasses;
+			sourceTree = "<group>";
+		};
+		C606CE571F2EB9E700917F04 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				C606CE581F2EB9FF00917F04 /* BaseFMDBOption.h */,
+				C606CE591F2EB9FF00917F04 /* BaseFMDBOption.m */,
+				C606CE5B1F2EBAE500917F04 /* EdgeInfoOptions.h */,
+				C606CE5C1F2EBAE500917F04 /* EdgeInfoOptions.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		C631D3DE1F2E1A4700B0E840 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				C631D3DF1F2E1A4700B0E840 /* FMDatabase.h */,
+				C631D3E01F2E1A4700B0E840 /* FMDatabase.m */,
+				C631D3E11F2E1A4700B0E840 /* FMDatabaseAdditions.h */,
+				C631D3E21F2E1A4700B0E840 /* FMDatabaseAdditions.m */,
+				C631D3E31F2E1A4700B0E840 /* FMDatabasePool.h */,
+				C631D3E41F2E1A4700B0E840 /* FMDatabasePool.m */,
+				C631D3E51F2E1A4700B0E840 /* FMDatabaseQueue.h */,
+				C631D3E61F2E1A4700B0E840 /* FMDatabaseQueue.m */,
+				C631D3E71F2E1A4700B0E840 /* FMDB.h */,
+				C631D3E81F2E1A4700B0E840 /* FMResultSet.h */,
+				C631D3E91F2E1A4700B0E840 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		C631D3EF1F2E1A6900B0E840 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C631D3F01F2E1A6900B0E840 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C634E5821F28A24A00CCE2F2 /* SlideView-侧边栏 */ = {
@@ -740,6 +948,7 @@
 				7E433E021EDC3EA100DD0327 /* dataPlist.plist in Resources */,
 				7E47CBFD1ED6B3BD00C9A552 /* SVProgressHUD.bundle in Resources */,
 				7E72C4471ECC4A4800C54296 /* Assets.xcassets in Resources */,
+				C606CE401F2EB9AF00917F04 /* Info.plist in Resources */,
 				7E44DF101ED6B9BE005B6B26 /* EdgeForgetPasswardViewController.xib in Resources */,
 				7E4B291A1ED071DF003DE423 /* json.plist in Resources */,
 				7E47CBC11ED5871000C9A552 /* EdgemoreViewController.xib in Resources */,
@@ -772,46 +981,75 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E44DF131ED6B9BE005B6B26 /* EdgeRegisteredViewController.m in Sources */,
-				7E433E011EDC3EA100DD0327 /* dataModel.m in Sources */,
+				C606CE461F2EB9AF00917F04 /* NSObject+MJClass.m in Sources */,
+				C606CE491F2EB9AF00917F04 /* NSObject+MJProperty.m in Sources */,
 				7E4B290F1ED071DF003DE423 /* EdgeGroup.m in Sources */,
+				C631D3EA1F2E1A4700B0E840 /* FMDatabase.m in Sources */,
+				C606CE0C1F2EB20900917F04 /* EdgeCustomTableViewCell.m in Sources */,
 				C634E5B31F28A30100CCE2F2 /* UIView_extra.m in Sources */,
+				C631D3EC1F2E1A4700B0E840 /* FMDatabasePool.m in Sources */,
 				C634E5881F28A24A00CCE2F2 /* LeftSlideViewController.m in Sources */,
 				C634E5AA1F28A28000CCE2F2 /* NSArray+MASAdditions.m in Sources */,
-				7E433E061EDC3EA100DD0327 /* modelFream.m in Sources */,
 				7E4B29141ED071DF003DE423 /* EdgeInfomationViewController.m in Sources */,
 				7E47CBC01ED5871000C9A552 /* EdgemoreViewController.m in Sources */,
 				C634E5AC1F28A28000CCE2F2 /* View+MASAdditions.m in Sources */,
+				C606CE501F2EB9AF00917F04 /* SBJsonStreamParserState.m in Sources */,
 				C634E5A41F28A28000CCE2F2 /* MASCompositeConstraint.m in Sources */,
 				7E4B29171ED071DF003DE423 /* UIImage+EdgeImage.m in Sources */,
 				7E4B29151ED071DF003DE423 /* AppDelegate.m in Sources */,
 				7E47CBFE1ED6B3BD00C9A552 /* SVProgressHUD.m in Sources */,
+				C606CE521F2EB9AF00917F04 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				C606CE531F2EB9AF00917F04 /* SBJsonStreamWriterState.m in Sources */,
 				7E44DF111ED6B9BE005B6B26 /* EdgeLoginViewConViewController.m in Sources */,
 				7E44DF0F1ED6B9BE005B6B26 /* EdgeForgetPasswardViewController.m in Sources */,
+				C606CE5A1F2EB9FF00917F04 /* BaseFMDBOption.m in Sources */,
 				7E4B29121ED071DF003DE423 /* EdgetopView.m in Sources */,
+				C606CE471F2EB9AF00917F04 /* NSObject+MJCoding.m in Sources */,
+				C606CE031F2EB0FA00917F04 /* modelFream.m in Sources */,
 				7E4B290D1ED071DF003DE423 /* EdgeContactViewController.m in Sources */,
 				C634E5A81F28A28000CCE2F2 /* MASViewAttribute.m in Sources */,
+				C606CE4A1F2EB9AF00917F04 /* NSString+MJExtension.m in Sources */,
 				7E44DF0D1ED6B9BE005B6B26 /* EdgeForgetPassTWOViewController.m in Sources */,
 				C634E5A51F28A28000CCE2F2 /* MASConstraint.m in Sources */,
 				7E433E031EDC3EA100DD0327 /* EdgeChatViewController.m in Sources */,
+				C606CE4B1F2EB9AF00917F04 /* NSObject+SBJson.m in Sources */,
 				7E4B290E1ED071DF003DE423 /* EdgeContacts.m in Sources */,
+				C606CE561F2EB9AF00917F04 /* SBJsonWriter.m in Sources */,
 				7E4B29111ED071DF003DE423 /* EdgeDynamicViewController.m in Sources */,
 				C634E5A61F28A28000CCE2F2 /* MASConstraintMaker.m in Sources */,
 				7E47CBFC1ED6B3BD00C9A552 /* SVProgressAnimatedView.m in Sources */,
 				7E47CBFF1ED6B3BD00C9A552 /* SVRadialGradientLayer.m in Sources */,
 				C634E5AD1F28A28000CCE2F2 /* ViewController+MASAdditions.m in Sources */,
+				C606CE451F2EB9AF00917F04 /* MJPropertyType.m in Sources */,
 				7E4B29191ED071DF003DE423 /* EdgeRootTabBarViewController.m in Sources */,
 				7E47CBFB1ED6B3BD00C9A552 /* SVIndefiniteAnimatedView.m in Sources */,
+				C606CE021F2EB0FA00917F04 /* dataModel.m in Sources */,
 				C634E5AB1F28A28000CCE2F2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				7E4B29161ED071DF003DE423 /* UIBarButtonItem+EdgeExention.m in Sources */,
 				C634E5A91F28A28000CCE2F2 /* MASViewConstraint.m in Sources */,
+				C631D3ED1F2E1A4700B0E840 /* FMDatabaseQueue.m in Sources */,
+				C606CE551F2EB9AF00917F04 /* SBJsonUTF8Stream.m in Sources */,
+				C606CE481F2EB9AF00917F04 /* NSObject+MJKeyValue.m in Sources */,
+				C606CE431F2EB9AF00917F04 /* MJProperty.m in Sources */,
+				C606CE511F2EB9AF00917F04 /* SBJsonStreamWriter.m in Sources */,
 				7EB78EAD1ED09F9B0011642C /* EdgeEditContactController.m in Sources */,
 				C60C97281F283A6D007DEBAC /* EdgeRootViewController.m in Sources */,
+				C606CE421F2EB9AF00917F04 /* MJFoundation.m in Sources */,
+				C631D3EB1F2E1A4700B0E840 /* FMDatabaseAdditions.m in Sources */,
+				C606CE541F2EB9AF00917F04 /* SBJsonTokeniser.m in Sources */,
+				C606CE411F2EB9AF00917F04 /* MJExtensionConst.m in Sources */,
+				C606CE4E1F2EB9AF00917F04 /* SBJsonStreamParserAccumulator.m in Sources */,
 				C634E5A71F28A28000CCE2F2 /* MASLayoutConstraint.m in Sources */,
+				C606CE4C1F2EB9AF00917F04 /* SBJsonParser.m in Sources */,
+				C631D3EE1F2E1A4700B0E840 /* FMResultSet.m in Sources */,
+				C606CE4F1F2EB9AF00917F04 /* SBJsonStreamParserAdapter.m in Sources */,
 				C634E5891F28A24A00CCE2F2 /* LeftSortsViewController.m in Sources */,
 				7E44DF151ED6B9BE005B6B26 /* EdgeResiterTwoViewController.m in Sources */,
+				C606CE441F2EB9AF00917F04 /* MJPropertyKey.m in Sources */,
+				C606CE4D1F2EB9AF00917F04 /* SBJsonStreamParser.m in Sources */,
 				7E72C43C1ECC4A4800C54296 /* main.m in Sources */,
 				7E4B29101ED071DF003DE423 /* BRContactsCell.m in Sources */,
-				7E433E051EDC3EA100DD0327 /* EdgeCustomTableViewCell.m in Sources */,
+				C606CE5D1F2EBAE500917F04 /* EdgeInfoOptions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

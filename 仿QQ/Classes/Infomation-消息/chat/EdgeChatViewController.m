@@ -10,11 +10,13 @@
 #import "dataModel.h"
 #import "modelFream.h"
 #import "EdgeCustomTableViewCell.h"
+#import "EdgeInfoOptions.h"
 
 #define statusH   (44+20)    // 状态栏的高度+上边距
 
 @interface EdgeChatViewController ()<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>{
     CGFloat showTableViewH;
+    CGFloat keyboardY;
 }
 
 /**
@@ -24,16 +26,59 @@
 
 //  存储模型数据
 @property(strong,nonatomic)NSMutableArray *arrModelData;
+//  通知
+@property(nonatomic,strong)NSNotification *notification;
+
+@property(nonatomic,strong)EdgeInfoOptions *infoOptions;
+// 数据库查询数组
+@property(nonatomic,strong)NSMutableArray *SQLDataArr;
+
+//  dataamodel
+@property(nonatomic,strong)dataModel *dataModel;
 
 @end
 
 @implementation EdgeChatViewController
-
--(NSMutableArray *)arrTimeData{
-    if (_arrTimeData==nil) {
-        _arrTimeData=[NSMutableArray array];
+-(dataModel *)dataModel{
+    if (!_dataModel) {
+        _dataModel = [[dataModel alloc]init];
     }
-    return _arrTimeData;
+    return _dataModel;
+}
+-(EdgeInfoOptions *)infoOptions{
+    if (!_infoOptions) {
+        _infoOptions = [[EdgeInfoOptions alloc]init];
+    }
+    return _infoOptions;
+}
+-(NSMutableArray *)arrTimeData{
+    if (!_arrTimeData) {
+        
+        _arrTimeData=[NSMutableArray array];
+        
+        NSString *strPath=[[NSBundle mainBundle]pathForResource:@"dataPlist.plist" ofType:nil];//得到Plist文件里面的数据
+        NSArray *arrData=[NSArray arrayWithContentsOfFile:strPath];
+        
+        for (NSDictionary *dict in arrData) {
+            
+            dataModel *model = [dataModel DictionWithMessInfo:dict];
+            BOOL timeIsEqual;
+            
+            //  判断上一个模型时间是否和现在的相等
+            timeIsEqual = [self timeIsEqual:model.time];
+            
+            modelFream *freamModel = [[modelFream alloc]initWithFreamModel:model timeIsEqual:timeIsEqual];//将模型里面的数据转为Frame,并且判断时间是否相等
+            
+            [_arrTimeData addObject:freamModel];//添加Frame的模型到数组里面
+        }
+    }
+     return _arrTimeData;
+}
+-(NSMutableArray *)SQLDataArr{
+    if (!_SQLDataArr) {
+        _SQLDataArr = [NSMutableArray array];
+    }
+    return _SQLDataArr;
 }
 
 -(NSMutableArray *)arrModelData{
@@ -53,28 +98,54 @@
                                                          ]];
     }
     return _arrModelData;
-
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+     //  进来之前先提取数据刷新表格
+     dispatch_async(dispatch_get_global_queue(0,0), ^{
+         //  数据查询
+    self.SQLDataArr = [self.infoOptions selectDataFormDataBase];
+         
+    NSLog(@"self.SQLDataArr.count = %lu",(unsigned long)self.SQLDataArr.count);
+
+    [self.arrTimeData addObjectsFromArray:self.SQLDataArr];
+        
+    NSLog(@"self.SQLDataArr.count = %lu",(unsigned long)self.arrTimeData.count);
+         //  主线程刷新
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        [self.customTableView reloadData];
+    });
+});
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+  
     self.navigationItem.title = _chatName;
     
     [self someSet];
-    [self messModelArr];
     
     // 监听键盘出现的出现和消失
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-    
+
+//    UITextField *inputMess = [[UITextField alloc]initWithFrame:CGRectMake(5, 5, self.view.frame.size.width-10, 34)];
+//    inputMess.delegate = self;
+//    inputMess.backgroundColor = [UIColor blueColor];
+//  
+//    self.inputMess = inputMess;
+//    
+//    [self.bgView addSubview:inputMess];
 }
+
 -(void)someSet{
     
     showTableViewH=[UIScreen mainScreen].bounds.size.height-statusH-self.inputViewH.constant;
-    //  NSLog(@"%f",self.inputViewH.constant);
+   
     self.customTableView.frame=CGRectMake(0, statusH, [UIScreen mainScreen].bounds.size.width, showTableViewH);
-   // NSLog(@" self.customTableView.frame=%@", self.customTableView);
+
     self.inputMess.delegate=self;//设置UITextField的代理
     self.inputMess.returnKeyType=UIReturnKeySend;//更改返回键的文字 (或者在sroryBoard中的,选中UITextField,对return key更改)
     self.inputMess.clearButtonMode=UITextFieldViewModeWhileEditing;
@@ -88,40 +159,18 @@
     [self.customTableView setShowsVerticalScrollIndicator:NO];
 }
 
-#pragma mark 得到Cell上面的Frame的模型
--(void)messModelArr{
-    NSString *strPath=[[NSBundle mainBundle]pathForResource:@"dataPlist.plist" ofType:nil];//得到Plist文件里面的数据
-    NSArray *arrData=[NSArray arrayWithContentsOfFile:strPath];
-    
-    for (NSDictionary *dict in arrData) {
-        
-        dataModel *model = [dataModel DictionWithMessInfo:dict];
-        
-        BOOL timeIsEqual;
-        
-        if (self.arrTimeData) {
-            //  判断上一个模型时间是否和现在的相等
-            timeIsEqual = [self timeIsEqual:model.time];
-        }
-        modelFream *freamModel = [[modelFream alloc]initWithFreamModel:model timeIsEqual:timeIsEqual];//将模型里面的数据转为Frame,并且判断时间是否相等
-        
-        [self.arrTimeData addObject:freamModel];//添加Frame的模型到数组里面
-
-    }
-}
-
 #pragma mark UITableViewDelegate UITableViewDatasources
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectio{
 
+//    NSLog(@" self.arrTimeData.count; = %lu", (unsigned long)self.arrTimeData.count);
     return self.arrTimeData.count;
-
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     EdgeCustomTableViewCell *cell = [EdgeCustomTableViewCell customCreateCell:tableView];
+    
     cell.frameModel = self.arrTimeData[indexPath.row];
     
     return cell;
@@ -129,12 +178,13 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
    
-    modelFream *frameModel=self.arrTimeData[indexPath.row];
-   
+    modelFream *frameModel =self.arrTimeData[indexPath.row];
+
     return frameModel.cellHeight;
 }
 #pragma mark 键盘将要出现
 -(void)keyboardWillShow:(NSNotification *)notifa{
+
     [self dealKeyboardFrame:notifa];
 }
 #pragma mark 键盘消失完毕
@@ -146,16 +196,18 @@
     NSDictionary *dicMess=changeMess.userInfo;//键盘改变的所有信息
     CGFloat changeTime=[dicMess[@"UIKeyboardAnimationDurationUserInfoKey"] floatValue];//通过userInfo 这个字典得到对得到相应的信息//0.25秒后消失键盘
     CGFloat keyboardMoveY=[dicMess[UIKeyboardFrameEndUserInfoKey]CGRectValue].origin.y-[UIScreen mainScreen].bounds.size.height;//键盘Y值的改变(字典里面的键UIKeyboardFrameEndUserInfoKey对应的值-屏幕自己的高度)
+    keyboardY = keyboardMoveY;
+    
     [UIView animateWithDuration:changeTime animations:^{ //0.25秒之后改变tableView和bgView的Y轴
         self.customTableView.frame=CGRectMake(0, statusH, [UIScreen mainScreen].bounds.size.width, showTableViewH+keyboardMoveY);
         
         self.bgView.transform=CGAffineTransformMakeTranslation(0, keyboardMoveY);
-        
     }];
+
     //  刷新到最下面一条
     NSIndexPath *path=[NSIndexPath indexPathForItem:self.arrTimeData.count-1 inSection:0];
   
-    [self.customTableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionNone animated:YES];//将tableView的行滚到最下面的一行
+    [self.customTableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionBottom animated:YES];//将tableView的行滚到最下面的一行
 }
 #pragma mark 滚动TableView去除键盘
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
@@ -171,6 +223,11 @@
     return YES;
 }
 
+/**
+ 点击发送按钮
+
+ @param messvalue desc数据
+ */
 -(void)sendMessInfomation:(NSString *)messvalue{
 
     //添加一个数据模型(并且刷新表)
@@ -188,16 +245,18 @@
     
     dataModel *mess = [dataModel DictionWithMessInfo:dicValues];
     
-//    NSLog(@"mess = %@",mess);
-    
     modelFream *frameModel=[modelFream modelFrame:mess timeIsEqual:[self timeIsEqual:nowTime]]; //判断前后时间是否一致
     
+    //  将插入到数据保存到数据库
+    [self.infoOptions createDataTable];
+    //  保存到数据库
+    [self.infoOptions saveDataForImage:@"boy" desc:messvalue time:nowTime person:1];
+
     [self.arrTimeData addObject:frameModel];
-  
+    
     [self.customTableView reloadData];
     
     self.inputMess.text=nil;
-    
     
     //自动回复就是再次添加一个frame模型
     
@@ -213,18 +272,23 @@
     
     modelFream *frameModelAuto=[modelFream modelFrame:messAuto timeIsEqual:[self timeIsEqual:nowTime]];//判断前后时候是否一致
   
+    //  保存到数据库
+    [self.infoOptions saveDataForImage:@"girl" desc:[self.arrModelData objectAtIndex:num] time:nowTime person:0];
+    
     [self.arrTimeData addObject:frameModelAuto];
    
     [self.customTableView reloadData];
    
-    //  刷新到最下面一条
+    //  重新设置键盘高度
+  //  [self dealKeyboardFrame:self.notification];
+
     NSIndexPath *path=[NSIndexPath indexPathForItem:self.arrTimeData.count-1 inSection:0];
-  
-    [self.customTableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionNone animated:YES];
-  
+    
+    [self.customTableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionNone animated:YES];//将tableView的行滚到最下面的一行
 }
 
 #pragma mark 判断前后时间是否一致
+
 -(BOOL)timeIsEqual:(NSString *)comStrTime{
     
     modelFream *frame=[self.arrTimeData lastObject];

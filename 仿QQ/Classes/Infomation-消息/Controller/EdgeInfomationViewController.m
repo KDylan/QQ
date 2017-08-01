@@ -118,6 +118,9 @@
 }
 
 
+/**
+ 添加searchBar
+ */
 -(void)addSearchBar{
     //  创建searchController
     
@@ -141,10 +144,12 @@
       self.definesPresentationContext = YES;
     // 添加 searchbar 到 headerview
     self.tableView.tableHeaderView = _searchController.searchBar;
-    
-  
 }
 
+
+/**
+ 添加tableView
+ */
 -(void)addTableView
 {
     UITableView *tableView = [[UITableView alloc]init];
@@ -158,6 +163,9 @@
     [self.view addSubview:tableView];
 }
 
+/**
+ 下拉列表判断点击
+ */
 -(void)infomationListView{
  
     
@@ -172,20 +180,10 @@
         self.listView.hidden = YES;
     }
 }
-//  点击显示侧边栏
--(void)leftSlideView{
-    NSLog(@"%s",__func__);
-    
-//    EdgeLeftSlideView *leftView = [[EdgeLeftSlideView alloc] initWithFrame:CGRectMake(-SCREEN_WIDTH * (1 - leftWidthScale), 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
-//     //  NSLog(@" LeftView *leftView = %@",leftView);
-//    [self.view addSubview:leftView];
-//    /**
-//     *  frame = (-93.75 0; 375 667); layer = <CALayer: 0x7f97f9740230>>
-//
-//     */
-//    [[EdgeLeftSlideManager instance]installMainViewController:self leftView:leftView];
 
-}
+/**
+ 添加下拉列表
+ */
 -(void)addlistView{
     //  添加背景View
     

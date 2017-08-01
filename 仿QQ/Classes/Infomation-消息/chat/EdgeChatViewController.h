@@ -17,6 +17,7 @@
  *  输入框
  */
 @property (weak, nonatomic) IBOutlet UITextField *inputMess;
+//@property(weak,nonatomic)UITextField *inputMess;
 /**
  *  背景颜色
  */

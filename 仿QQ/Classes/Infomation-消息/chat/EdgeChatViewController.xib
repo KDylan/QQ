@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EdgeChatViewController">
@@ -18,30 +23,9 @@
             <rect key="frame" x="0.0" y="0.0" width="345" height="627"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5b-1v-U9H" userLabel="BG">
-                    <rect key="frame" x="0.0" y="583" width="345" height="44"/>
-                    <subviews>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KGf-CB-VLG">
-                            <rect key="frame" x="5" y="5" width="335" height="34"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <outlet property="delegate" destination="-1" id="6Xk-qq-QHu"/>
-                            </connections>
-                        </textField>
-                    </subviews>
-                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="bOQ-kA-NHZ"/>
-                        <constraint firstItem="KGf-CB-VLG" firstAttribute="leading" secondItem="e5b-1v-U9H" secondAttribute="leading" constant="5" id="dzC-wV-gep"/>
-                        <constraint firstAttribute="trailing" secondItem="KGf-CB-VLG" secondAttribute="trailing" constant="5" id="lmX-J0-I1J"/>
-                        <constraint firstAttribute="bottom" secondItem="KGf-CB-VLG" secondAttribute="bottom" constant="5" id="uvv-Y9-luk"/>
-                        <constraint firstItem="KGf-CB-VLG" firstAttribute="top" secondItem="e5b-1v-U9H" secondAttribute="top" constant="5" id="vXy-QL-1eN"/>
-                    </constraints>
-                </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T3T-1h-65x">
-                    <rect key="frame" x="0.0" y="70" width="345" height="513"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <rect key="frame" x="0.0" y="10" width="345" height="573"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="583" id="xdc-3U-e6b"/>
                     </constraints>
@@ -55,18 +39,36 @@
                         <outlet property="delegate" destination="-1" id="a3B-EK-maE"/>
                     </connections>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5b-1v-U9H" userLabel="BG">
+                    <rect key="frame" x="0.0" y="583" width="345" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KGf-CB-VLG">
+                            <rect key="frame" x="8" y="5" width="329" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <attributedString key="attributedText"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="6Xk-qq-QHu"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="bOQ-kA-NHZ"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="T3T-1h-65x" secondAttribute="trailing" id="5mG-6x-wrU"/>
                 <constraint firstItem="e5b-1v-U9H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8MC-px-jFw"/>
                 <constraint firstItem="T3T-1h-65x" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="D7y-yc-yob"/>
                 <constraint firstItem="e5b-1v-U9H" firstAttribute="top" secondItem="T3T-1h-65x" secondAttribute="bottom" id="F5R-6g-zXP"/>
-                <constraint firstItem="T3T-1h-65x" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="Hg8-qX-A3O"/>
+                <constraint firstItem="T3T-1h-65x" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="Hg8-qX-A3O"/>
                 <constraint firstItem="T3T-1h-65x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PpU-PD-hJi"/>
                 <constraint firstItem="e5b-1v-U9H" firstAttribute="top" secondItem="T3T-1h-65x" secondAttribute="bottom" id="Q67-Bl-OMk"/>
+                <constraint firstAttribute="bottom" secondItem="e5b-1v-U9H" secondAttribute="bottom" id="cZu-Dg-qKU"/>
                 <constraint firstAttribute="trailing" secondItem="e5b-1v-U9H" secondAttribute="trailing" id="r5i-ah-jio"/>
-                <constraint firstAttribute="bottom" secondItem="e5b-1v-U9H" secondAttribute="bottom" id="wBL-FI-dMh"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
