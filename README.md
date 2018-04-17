@@ -34,8 +34,8 @@
 
 
 <h2><a id="foundation">侧边栏</a></h2>
+ <div>侧边栏是参考https://github.com/chennyhuang/LeftSlide来写的<div>
 <div>
-  <div>侧边栏是参考https://github.com/chennyhuang/LeftSlide<div>
 <img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1513.png" width="24%">
 </div>
 <br>
