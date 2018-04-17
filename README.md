@@ -11,43 +11,35 @@
 <div>
 
 <p align="right"><b>帮忙点个赞↑👍,感谢您的支持!</b></p>
+
+
 <h2><a id="foundation">注册登录页面</a></h2>
-
 <div>
-<img src="
-https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1503.PNG" width="24%">|<img src="
-https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1504.PNG" width="23%">|<img src="
-https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1505.PNG" width="23%">
+<img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1503.PNG" width="24%">|<img src="https://github.com/UEdge/OCRCard/blob/master/leastOCR/img/IMG_1504.PNG" width="23%">|<img src="https://github.com/UEdge/OCRCard/blob/master/leastOCR/img/IMG_1505.PNG" width="23%">
 </div>
 <br>
 <br>
 
-<h2><a id="foundation">好友列表页面/a></h2>
+<h2><a id="foundation">好友列表页面</a></h2>
 <div>
-<img src="
-https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1507.PNG" width="24%">|<img src="
-https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1508.PNG" width="23%">|<img src="
-https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1510.PNG" width="23%">
+<img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1507.PNG" width="24%">|<img src="https://github.com/UEdge/OCRCard/blob/master/leastOCR/img/IMG_1508.PNG" width="23%">|<img src="https://github.com/UEdge/OCRCard/blob/master/leastOCR/img/IMG_1510.PNG" width="23%">
 </div>
 <br>
 <br>
 
-<h2><a id="foundation">消息列表页面/a></h2>
+<h2><a id="foundation">消息列表页面</a></h2>
 <div>
-<img src="
-https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1506.PNG" width="24%">|<img src="
-https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1511.PNG" width="23%">|<img src="
-https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1512.PNG" width="23%">
+<img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1506.PNG" width="24%">|<img src="https://github.com/UEdge/OCRCard/blob/master/leastOCR/img/IMG_1511.PNG" width="23%">|<img src="https://github.com/UEdge/OCRCard/blob/master/leastOCR/img/IMG_1512.PNG" width="23%">
 </div>
 <br>
 <br>
 
 
-<h2><a id="foundation">侧边栏/a></h2>
+<h2><a id="foundation">侧边栏</a></h2>
 <div>
-<img src="
-https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1513.PNG" width="24%">
+<img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1513.PNG" width="24%">
 </div>
 <br>
 <br>
+
 </div>
