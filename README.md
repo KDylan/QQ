@@ -35,7 +35,8 @@
 
 <h2><a id="foundation">侧边栏</a></h2>
 <div>
-<img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1513.PNG" width="24%">
+  <div>侧边栏是参考https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1513.png来的<div>
+<img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1513.png" width="24%">
 </div>
 <br>
 <br>
