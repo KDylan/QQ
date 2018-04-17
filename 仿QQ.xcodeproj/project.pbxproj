@@ -116,6 +116,7 @@
 		DB471C35208590E5001FFDA0 /* IMG_1510.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DB471C2C208590E5001FFDA0 /* IMG_1510.PNG */; };
 		DB471C36208590E5001FFDA0 /* IMG_1511.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DB471C2D208590E5001FFDA0 /* IMG_1511.PNG */; };
 		DB471C37208590E5001FFDA0 /* IMG_1512.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DB471C2E208590E5001FFDA0 /* IMG_1512.PNG */; };
+		DB471C39208591A1001FFDA0 /* IMG_1513.png in Resources */ = {isa = PBXBuildFile; fileRef = DB471C382085919F001FFDA0 /* IMG_1513.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -331,6 +332,7 @@
 		DB471C2C208590E5001FFDA0 /* IMG_1510.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1510.PNG; sourceTree = "<group>"; };
 		DB471C2D208590E5001FFDA0 /* IMG_1511.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1511.PNG; sourceTree = "<group>"; };
 		DB471C2E208590E5001FFDA0 /* IMG_1512.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1512.PNG; sourceTree = "<group>"; };
+		DB471C382085919F001FFDA0 /* IMG_1513.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1513.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -866,6 +868,7 @@
 				DB471C2C208590E5001FFDA0 /* IMG_1510.PNG */,
 				DB471C2D208590E5001FFDA0 /* IMG_1511.PNG */,
 				DB471C2E208590E5001FFDA0 /* IMG_1512.PNG */,
+				DB471C382085919F001FFDA0 /* IMG_1513.png */,
 			);
 			path = img;
 			sourceTree = "<group>";
@@ -982,6 +985,7 @@
 				7E44DF121ED6B9BE005B6B26 /* EdgeLoginViewConViewController.xib in Resources */,
 				7E44DF161ED6B9BE005B6B26 /* EdgeResiterTwoViewController.xib in Resources */,
 				7E433E021EDC3EA100DD0327 /* dataPlist.plist in Resources */,
+				DB471C39208591A1001FFDA0 /* IMG_1513.png in Resources */,
 				DB471C37208590E5001FFDA0 /* IMG_1512.PNG in Resources */,
 				7E47CBFD1ED6B3BD00C9A552 /* SVProgressHUD.bundle in Resources */,
 				DB471C30208590E5001FFDA0 /* IMG_1504.PNG in Resources */,
