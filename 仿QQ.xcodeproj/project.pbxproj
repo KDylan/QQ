@@ -107,6 +107,15 @@
 		C634E5AC1F28A28000CCE2F2 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C634E5A01F28A28000CCE2F2 /* View+MASAdditions.m */; };
 		C634E5AD1F28A28000CCE2F2 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C634E5A31F28A28000CCE2F2 /* ViewController+MASAdditions.m */; };
 		C634E5B31F28A30100CCE2F2 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = C634E5B21F28A30100CCE2F2 /* UIView_extra.m */; };
+		DB471C2F208590E5001FFDA0 /* IMG_1503.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DB471C26208590E5001FFDA0 /* IMG_1503.PNG */; };
+		DB471C30208590E5001FFDA0 /* IMG_1504.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DB471C27208590E5001FFDA0 /* IMG_1504.PNG */; };
+		DB471C31208590E5001FFDA0 /* IMG_1505.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DB471C28208590E5001FFDA0 /* IMG_1505.PNG */; };
+		DB471C32208590E5001FFDA0 /* IMG_1506.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DB471C29208590E5001FFDA0 /* IMG_1506.PNG */; };
+		DB471C33208590E5001FFDA0 /* IMG_1507.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DB471C2A208590E5001FFDA0 /* IMG_1507.PNG */; };
+		DB471C34208590E5001FFDA0 /* IMG_1508.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DB471C2B208590E5001FFDA0 /* IMG_1508.PNG */; };
+		DB471C35208590E5001FFDA0 /* IMG_1510.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DB471C2C208590E5001FFDA0 /* IMG_1510.PNG */; };
+		DB471C36208590E5001FFDA0 /* IMG_1511.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DB471C2D208590E5001FFDA0 /* IMG_1511.PNG */; };
+		DB471C37208590E5001FFDA0 /* IMG_1512.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DB471C2E208590E5001FFDA0 /* IMG_1512.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -313,6 +322,15 @@
 		C634E5A31F28A28000CCE2F2 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		C634E5B11F28A30100CCE2F2 /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_extra.h; sourceTree = "<group>"; };
 		C634E5B21F28A30100CCE2F2 /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_extra.m; sourceTree = "<group>"; };
+		DB471C26208590E5001FFDA0 /* IMG_1503.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1503.PNG; sourceTree = "<group>"; };
+		DB471C27208590E5001FFDA0 /* IMG_1504.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1504.PNG; sourceTree = "<group>"; };
+		DB471C28208590E5001FFDA0 /* IMG_1505.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1505.PNG; sourceTree = "<group>"; };
+		DB471C29208590E5001FFDA0 /* IMG_1506.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1506.PNG; sourceTree = "<group>"; };
+		DB471C2A208590E5001FFDA0 /* IMG_1507.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1507.PNG; sourceTree = "<group>"; };
+		DB471C2B208590E5001FFDA0 /* IMG_1508.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1508.PNG; sourceTree = "<group>"; };
+		DB471C2C208590E5001FFDA0 /* IMG_1510.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1510.PNG; sourceTree = "<group>"; };
+		DB471C2D208590E5001FFDA0 /* IMG_1511.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1511.PNG; sourceTree = "<group>"; };
+		DB471C2E208590E5001FFDA0 /* IMG_1512.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1512.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -650,6 +668,7 @@
 		7E72C43A1ECC4A4800C54296 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DB471C25208590E4001FFDA0 /* img */,
 				7E72C43B1ECC4A4800C54296 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -835,6 +854,22 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		DB471C25208590E4001FFDA0 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				DB471C26208590E5001FFDA0 /* IMG_1503.PNG */,
+				DB471C27208590E5001FFDA0 /* IMG_1504.PNG */,
+				DB471C28208590E5001FFDA0 /* IMG_1505.PNG */,
+				DB471C29208590E5001FFDA0 /* IMG_1506.PNG */,
+				DB471C2A208590E5001FFDA0 /* IMG_1507.PNG */,
+				DB471C2B208590E5001FFDA0 /* IMG_1508.PNG */,
+				DB471C2C208590E5001FFDA0 /* IMG_1510.PNG */,
+				DB471C2D208590E5001FFDA0 /* IMG_1511.PNG */,
+				DB471C2E208590E5001FFDA0 /* IMG_1512.PNG */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -903,7 +938,7 @@
 				TargetAttributes = {
 					7E72C4361ECC4A4700C54296 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 7JW5QNLXK2;
+						DevelopmentTeam = 38C8EM7C65;
 					};
 					7E72C44F1ECC4A4800C54296 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -943,18 +978,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E44DF0E1ED6B9BE005B6B26 /* EdgeForgetPassTWOViewController.xib in Resources */,
+				DB471C32208590E5001FFDA0 /* IMG_1506.PNG in Resources */,
 				7E44DF121ED6B9BE005B6B26 /* EdgeLoginViewConViewController.xib in Resources */,
 				7E44DF161ED6B9BE005B6B26 /* EdgeResiterTwoViewController.xib in Resources */,
 				7E433E021EDC3EA100DD0327 /* dataPlist.plist in Resources */,
+				DB471C37208590E5001FFDA0 /* IMG_1512.PNG in Resources */,
 				7E47CBFD1ED6B3BD00C9A552 /* SVProgressHUD.bundle in Resources */,
+				DB471C30208590E5001FFDA0 /* IMG_1504.PNG in Resources */,
 				7E72C4471ECC4A4800C54296 /* Assets.xcassets in Resources */,
 				C606CE401F2EB9AF00917F04 /* Info.plist in Resources */,
+				DB471C36208590E5001FFDA0 /* IMG_1511.PNG in Resources */,
 				7E44DF101ED6B9BE005B6B26 /* EdgeForgetPasswardViewController.xib in Resources */,
+				DB471C31208590E5001FFDA0 /* IMG_1505.PNG in Resources */,
 				7E4B291A1ED071DF003DE423 /* json.plist in Resources */,
 				7E47CBC11ED5871000C9A552 /* EdgemoreViewController.xib in Resources */,
+				DB471C35208590E5001FFDA0 /* IMG_1510.PNG in Resources */,
+				DB471C34208590E5001FFDA0 /* IMG_1508.PNG in Resources */,
 				7E433E041EDC3EA100DD0327 /* EdgeChatViewController.xib in Resources */,
 				7E44DF141ED6B9BE005B6B26 /* EdgeRegisteredViewController.xib in Resources */,
+				DB471C33208590E5001FFDA0 /* IMG_1507.PNG in Resources */,
 				7E47CBFA1ED6B3BD00C9A552 /* SMSSDKUI.bundle in Resources */,
+				DB471C2F208590E5001FFDA0 /* IMG_1503.PNG in Resources */,
 				7E4B29131ED071DF003DE423 /* EdgetopView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1178,6 +1222,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEVELOPMENT_TEAM = 38C8EM7C65;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SMS_SDK",
@@ -1198,6 +1243,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				DEVELOPMENT_TEAM = 38C8EM7C65;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SMS_SDK",
