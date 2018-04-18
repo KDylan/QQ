@@ -20,14 +20,14 @@
 
 <h2><a id="foundation">好友列表页面</a></h2>
 <div>
-<img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1507.PNG" width="24%">  |  <img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1508.PNG" width="23%">  |  <img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1510.PNG" width="23%">
+<img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1507.PNG" width="24%">    <img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1508.PNG" width="23%">    <img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1510.PNG" width="23%">
 </div>
 <br>
 <br>
 
 <h2><a id="foundation">消息列表页面</a></h2>
 <div>
-<img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1506.PNG" width="24%">|<img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1511.PNG" width="23%">|<img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1512.PNG" width="23%">
+<img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1506.PNG" width="24%">    <img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1511.PNG" width="23%">    <img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1512.PNG" width="23%">
 </div>
 <br>
 <br>
