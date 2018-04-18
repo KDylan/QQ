@@ -13,7 +13,7 @@
 
 <h2><a id="foundation">注册登录页面</a></h2>
 <div>
-<img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1503.PNG" width="24%"> | <img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1504.PNG" width="23%"> | <img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1514.PNG" width="23%">
+<img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1503.PNG" width="24%">    <img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1504.PNG" width="23%">    <img src="https://github.com/UEdge/QQ/blob/master/%E4%BB%BFQQ/img/IMG_1514.PNG" width="23%">
 </div>
 <br>
 <br>
